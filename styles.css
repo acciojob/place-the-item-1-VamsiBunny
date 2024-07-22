@@ -1,2 +1,14 @@
 
-/* Your CSS Code here. */
+.holder {
+  display: flex;          
+  justify-content: space-between; /* Space between items */
+  flex-wrap: wrap;         /* Wrap items to the next row if needed */
+  margin: 0 15px;          /* Add some margin to the holder to ensure items touch the screen edges */
+}
+
+/* Item class */
+.item {
+  flex: 0 1 auto;          /* Allow items to grow and shrink, but not less than their content */
+  margin: 0 10px;          /* Add space between items */
+  box-sizing: border-box;  /* Include padding and border in the element's total width and height */
+}
